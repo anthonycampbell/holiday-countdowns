@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Flips from './Flips';
 import './App.css';
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
                        [3,5],[2,25],[3,13],[3,2],[2,22],
                        [3,10],[2,30],[3,17],[3,7],[2,27]]
  
-  const [date, setDate] = useState(new Date())
+  const [date, setDate] = useState(new Date(2020,9,30, 23, 59,55))
   const [halloween, ]   = useState(findHolidayYear(date, 9, 31))
   const [christmas, ]   = useState(findHolidayYear(date, 11, 25))
   const [valentines,]   = useState(findHolidayYear(date, 1, 14))
@@ -23,12 +24,13 @@ function App() {
 
   useEffect(()=>{
     const interval = setInterval(()=>{
-      setDate(new Date())
+      setDate((d) => new Date(d.getFullYear(), d.getMonth(), d.getDate(), d.getHours(), d.getMinutes(), d.getSeconds()+1))
     }, 1000)
     return () => clearInterval(interval)
   }, [])
 
   function findEaster(today){
+    console.log(today.getFullYear())
     let g = goldenArray[(today.getFullYear()%19) + 1]
     let nextEasterYear = findHolidayYear(today, g[0], g[1])
     if (nextEasterYear.getFullYear() > today.getFullYear()){
@@ -52,22 +54,20 @@ function App() {
 
   return (
     <div className="App">
-      <ul>
-        <li>
-          Today: { date.toString() }
-        </li>
         {holidays.map((v, i)=>{
           return(
-            <li key={i}>
-              <h1>{v[Object.keys(v)[0]]}:</h1> 
-              {Math.floor((v[Object.keys(v)[1]]-date)/days   )     }:
-              {Math.floor((v[Object.keys(v)[1]]-date)/hours  ) % 24}:
-              {Math.floor((v[Object.keys(v)[1]]-date)/minutes) % 60}:
-              {Math.floor((v[Object.keys(v)[1]]-date)/seconds) % 60}
-            </li>
+                <div className='container' key={i} id={v[Object.keys(v)[0]]} >
+                <span className='holiday-name'>{v[Object.keys(v)[0]]}</span>
+                <Flips h={v[Object.keys(v)[0]]}
+                       hd={v[Object.keys(v)[1]]}
+                       days={Math.floor((v[Object.keys(v)[1]]-date)/days)}
+                       hours={Math.floor((v[Object.keys(v)[1]]-date)/hours  ) % 24} 
+                       mins={Math.floor((v[Object.keys(v)[1]]-date)/minutes) % 60} 
+                       secs={Math.floor((v[Object.keys(v)[1]]-date)/seconds) % 60} />
+                </div>
           )
         })}
-      </ul>
+        <span className='date'>Today: { date.toString() }</span>
     </div>
   );
 }
