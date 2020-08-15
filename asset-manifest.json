@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/holiday-countdowns/static/css/main.1d1164a6.chunk.css",
+    "main.css": "/holiday-countdowns/static/css/main.b5f82fb0.chunk.css",
     "main.js": "/holiday-countdowns/static/js/main.47b183e1.chunk.js",
     "main.js.map": "/holiday-countdowns/static/js/main.47b183e1.chunk.js.map",
     "runtime-main.js": "/holiday-countdowns/static/js/runtime-main.adc539f8.js",
@@ -8,16 +8,16 @@
     "static/js/2.754b9308.chunk.js": "/holiday-countdowns/static/js/2.754b9308.chunk.js",
     "static/js/2.754b9308.chunk.js.map": "/holiday-countdowns/static/js/2.754b9308.chunk.js.map",
     "index.html": "/holiday-countdowns/index.html",
-    "precache-manifest.5be381948b1e0c8c11f428a2e26b4e5b.js": "/holiday-countdowns/precache-manifest.5be381948b1e0c8c11f428a2e26b4e5b.js",
+    "precache-manifest.d9397dff05822eca4cdf813c7c003919.js": "/holiday-countdowns/precache-manifest.d9397dff05822eca4cdf813c7c003919.js",
     "service-worker.js": "/holiday-countdowns/service-worker.js",
-    "static/css/main.1d1164a6.chunk.css.map": "/holiday-countdowns/static/css/main.1d1164a6.chunk.css.map",
+    "static/css/main.b5f82fb0.chunk.css.map": "/holiday-countdowns/static/css/main.b5f82fb0.chunk.css.map",
     "static/js/2.754b9308.chunk.js.LICENSE.txt": "/holiday-countdowns/static/js/2.754b9308.chunk.js.LICENSE.txt",
     "static/media/App.css": "/holiday-countdowns/static/media/spoopy.89d4ff2e.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.adc539f8.js",
     "static/js/2.754b9308.chunk.js",
-    "static/css/main.1d1164a6.chunk.css",
+    "static/css/main.b5f82fb0.chunk.css",
     "static/js/main.47b183e1.chunk.js"
   ]
 }
