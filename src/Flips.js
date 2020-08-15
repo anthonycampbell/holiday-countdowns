@@ -1,8 +1,8 @@
 import FlipNumbers from 'react-flip-numbers';
 import React from 'react';
 
-function Flips({h, hd, days, hours, mins, secs}){
-    if(secs < 0 || hd ==='CELEBRATE'){
+function Flips({d, h, hd, days, hours, mins, secs}){
+    if(d.getMonth() === hd.getMonth() && d.getDate() === hd.getDate()){
         return <div className='celebrate'>{'IT\'S '+h.toUpperCase()+'!'}</div>
     }
     let ret = ['','','','']
@@ -29,7 +29,7 @@ function Flips({h, hd, days, hours, mins, secs}){
 
     return (
         <div className='clock'>
-            <span className='time-tag-one'>Days </span>
+            <span className='time-tag-one'>Days</span>
             <span className='time-tag-two'>Hours</span>
             <span className='time-tag-three'>Mins</span>
             <span className='time-tag-four'> Secs</span>
