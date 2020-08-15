@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cf8627279c5a9d6544faa02095b24e93",
+    "revision": "95b2eea20094e9009ac4bdfe43e42f54",
     "url": "/holiday-countdowns/index.html"
   },
   {
-    "revision": "43fbf70643b2e4b2913b",
-    "url": "/holiday-countdowns/static/css/main.3e3cd716.chunk.css"
+    "revision": "724c22c22baf45bb0753",
+    "url": "/holiday-countdowns/static/css/main.1d1164a6.chunk.css"
   },
   {
     "revision": "889244b009b804a5b98a",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/holiday-countdowns/static/js/2.754b9308.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "43fbf70643b2e4b2913b",
+    "revision": "724c22c22baf45bb0753",
     "url": "/holiday-countdowns/static/js/main.47b183e1.chunk.js"
   },
   {
