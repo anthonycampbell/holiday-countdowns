@@ -32,7 +32,7 @@ function Flips({d, h, hd, days, hours, mins, secs}){
             <span className='time-tag-one'>Days</span>
             <span className='time-tag-two'>Hours</span>
             <span className='time-tag-three'>Mins</span>
-            <span className='time-tag-four'> Secs</span>
+            <span > Secs</span>
             <div className='numbers'>
                 <FlipNumbers play
                              width          = {50} 
